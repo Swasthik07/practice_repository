@@ -23,7 +23,7 @@ public class CommentController {
               @RequestParam long postId){
             Post post = postRepository.findById(postId).get();
             comment.setPost(post);
-
+            System.out.println("Comment");
             commentRepository.save(comment);
             return "Comment created successfully!";
         }
