@@ -1,0 +1,30 @@
+package com.crm.crm.payload;
+
+import java.util.Date;
+
+public class ErrorDetails {
+    private Date date;
+    private String message;
+
+    public String getRequest() {
+        return request;
+    }
+
+    private String request;
+
+    public String getMessage() {
+        return message;
+    }
+
+    public ErrorDetails( String message,Date date, String request) {
+        this.message=message;
+        this.date = date;
+        this.request = request;
+    }
+
+
+
+    public Date getDate() {
+        return date;
+    }
+}
