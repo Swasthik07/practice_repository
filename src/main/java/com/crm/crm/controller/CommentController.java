@@ -24,6 +24,7 @@ public class CommentController {
             Post post = postRepository.findById(postId).get();
             comment.setPost(post);
             System.out.println("Comment");
+            System.out.println("Comment");
             commentRepository.save(comment);
             return "Comment created successfully!";
         }
